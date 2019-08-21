@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav001"
+            app:startDestination="@id/main_Fragment">
+    <fragment android:id="@+id/main_Fragment" android:name="com.vyoumans.ets0001.Main_Fragment"
+              android:label="fragment_main_" tools:layout="@layout/fragment_main_">
+        <action android:id="@+id/action_main_Fragment_to_d01Log_Subject" app:destination="@id/d01Log_Subject"
+                app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+        <action android:id="@+id/action_main_Fragment_to_d02_missions" app:destination="@id/d02_missions"
+                app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+        <action android:id="@+id/action_main_Fragment_to_d03_requestMeds01" app:destination="@id/d03_requestMeds01"
+                app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+
+
+
+    <fragment android:id="@+id/d01Log_Subject" android:name="com.vyoumans.ets0001.D01Log_Subject"
+              android:label="fragment_d01_log__subject" tools:layout="@layout/fragment_d01_log__subject"/>
+
+
+
+    <fragment android:id="@+id/d02_missions" android:name="com.vyoumans.ets0001.d02_missions"
+              android:label="fragment_d02_missions" tools:layout="@layout/fragment_d02_missions"/>
+
+
+
+    <fragment android:id="@+id/d03_requestMeds01" android:name="com.vyoumans.ets0001.D03_requestMeds01"
+              android:label="fragment_d03_request_meds01" tools:layout="@layout/fragment_d03_request_meds01"/>
+</navigation>
